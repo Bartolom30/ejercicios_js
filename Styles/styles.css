@@ -1,6 +1,21 @@
-header, main, footer {
-    border: 1px solid red
-}
+
 header {
-    background-color: black;
+    border: 1px solid red;
+}
+
+main {
+    border: 1px solid red;
+
+}
+
+.titulo {
+    color: blueviolet;
+}
+
+footer {
+    border: 1px solid red;
+}
+
+nav a {
+    text-decoration: none;
 }

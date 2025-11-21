@@ -7,11 +7,21 @@ let minimo = Infinity;
 let contador2 = 0;
 let contador3 = 0;
 
+let validacion = true;
+
+if (personas<0) {
+    validacion = false;
+    console.log('No se pueden incluir valores negativos')
+}
+
+if (validacion) {
+
+
 while (contador<=personas) {
 let hijos = Number(prompt('Introduzca el número de hijos de la '+contador+' persona: '));
 total += hijos;
 
-
+ 
 if (hijos>=1) {
     contador2++;
 }   else if (hijos===0) {
@@ -37,3 +47,4 @@ console.log('Hay '+contador3+ ' personas que no tienen hijos');
 console.log('La media de hijos sería: '+total/contador+ ' por persona');
 console.log('El número máximo de hijos es de: '+ maximo);
 console.log('El número mínimo de hijos es de: '+ minimo);
+}
